@@ -1,0 +1,66 @@
+.hero-page {
+  background: url("../burgundy-exploring-nature.png") center no-repeat;
+  height: 90vh;
+  width: 100%;
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 999;
+}
+.hero-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255);
+  color: rgb(5, 5, 5);
+  box-shadow: 0px 1px 4px lightgray;
+}
+
+.description, .title {
+  margin: 1rem auto;
+  text-align: center;
+}
+.hero-page-signup {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 4rem auto;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  padding: 14px 40px;
+  border: 1px solid rgb(255, 0, 0);
+  transition: all 0.3s ease-out;
+}
+.hero-page-login {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 4rem auto;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  border: 1px solid rgb(221, 23, 23);
+  transition: all 0.3s ease-out;
+}
+.hero-page-login:hover {
+  box-shadow: 4px 5px 15px lightgrey;
+}
+
+.hero-page-signup:hover {
+  background: rgb(253, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: 250ms;
+}

@@ -1,0 +1,35 @@
+.sidebar__container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  flex-direction: column;
+  height: 60vh;
+  margin: 10px;
+  border-right: solid 1px grey;
+}
+.sidebar__item {
+  margin: 4rem;
+}
+.sidebar__links {
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  width: 80%;
+  display: table;
+  color: red;
+}
+.sidebar__menu {
+  list-style: none;
+}
+
+.sidebar__item__active {
+    margin: 4rem;
+    color: white;
+    background: rgb(245, 6, 6);
+    left: 0;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
