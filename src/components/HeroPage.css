@@ -1,13 +1,16 @@
 .hero-page {
-  background: url("../burgundy-exploring-nature.png") center no-repeat;
-  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1572888195250-3037a59d3578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80") center no-repeat;
+  height: 100vh;
   width: 100%;
-  margin: 3rem;
+  /* margin: 3rem; */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  z-index: 999;
+  /* z-index: 999; */
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
 }
 .hero-page-container {
   display: flex;
@@ -16,9 +19,8 @@
   align-items: center;
   max-width: 1500px;
   padding: 10px;
-  background-color: rgba(255, 255, 255);
-  color: rgb(5, 5, 5);
-  box-shadow: 0px 1px 4px lightgray;
+  color: rgb(255, 255, 255);
+  /* box-shadow: 0px 1px 4px lightgray; */
 }
 
 .description, .title {
