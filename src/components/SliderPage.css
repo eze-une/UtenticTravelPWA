@@ -1,0 +1,9 @@
+.slider{
+    width: 98%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+}
