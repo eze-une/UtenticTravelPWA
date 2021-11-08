@@ -4,8 +4,9 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Explore from './components/pages/Explore';
+import { SliderData } from './components/SliderData';
 
-function App() {
+function App( slides={SliderData}) {
   return (
     <>
     <Router>
