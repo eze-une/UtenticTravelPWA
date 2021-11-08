@@ -6,6 +6,7 @@ function SliderPage() {
     <div className="slider">
       <p>What Are You Doing This Weekend?</p>
       <p>How about..</p>
+      
     </div>
   );
 }
