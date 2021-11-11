@@ -15,26 +15,32 @@ const SliderPage = (props) => {
     return null;
   }
   return (
-    <section className="slider">
-      <FaArrowAltCircleLeft
-        className="icon left-arrow"
-        onClick={previousSlide}
-      />
-      <FaArrowAltCircleRight className="icon right-arrow" onClick={nextSlide} />
+    <div className="container">
+      <h2 className="title">Whate are you doing this weekend? Why not</h2>
+      <section className="slider">
+        <FaArrowAltCircleLeft
+          className="icon left-arrow"
+          onClick={previousSlide}
+        />
+        <FaArrowAltCircleRight
+          className="icon right-arrow"
+          onClick={nextSlide}
+        />
 
-      {props.slides.map((slide, index) => {
-        return (
-          <div
-            className={index === currrent ? "slide active" : "slide"}
-            key={index}
-          >
-            {index === currrent && (
-              <img src={slide.image} className="image" alt="images" />
-            )}
-          </div>
-        );
-      })}
-    </section>
+        {props.slides.map((slide, index) => {
+          return (
+            <div
+              className={index === currrent ? "slide active" : "slide"}
+              key={index}
+            >
+              {index === currrent && (
+                <img src={slide.image} className="image" alt="images" />
+              )}
+            </div>
+          );
+        })}
+      </section>
+    </div>
   );
 };
 
