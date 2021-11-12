@@ -16,7 +16,7 @@ const SliderPage = (props) => {
   }
   return (
     <div className="container">
-      <h2 className="title">Whate are you doing this weekend? Why not</h2>
+      <h2 className="title">What do we have in store for you?</h2>
       <section className="slider">
         <FaArrowAltCircleLeft
           className="icon left-arrow"

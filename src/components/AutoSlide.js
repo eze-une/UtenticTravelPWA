@@ -43,7 +43,7 @@ function AutoSlide(props) {
       >
         {colors.map((backgroundColor, index) => (
           <div className="slides" key={index}>
-            <img src={backgroundColor} style={{height:'100%', width: '100%'}}/>
+            <img src={backgroundColor} style={{height:'100%', width: '100%', opacity:'0.6'}}/>
           </div>
         ))}
       </div>
