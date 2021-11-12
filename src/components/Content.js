@@ -1,6 +1,5 @@
 import React from "react";
 import "./Content.css";
-import cherry from "../cherry-577.png";
 
 function Content() {
   return (
