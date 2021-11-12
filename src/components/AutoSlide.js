@@ -7,6 +7,7 @@ function AutoSlide(props) {
     `https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80`,
     `https://images.unsplash.com/photo-1624314138470-5a2f24623f10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80`,
     `https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80`,
+    `https://images.unsplash.com/photo-1572888195250-3037a59d3578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80`
   ];
   const delay = 3500;
   const [index, setIndex] = useState(0);
@@ -61,7 +62,7 @@ function AutoSlide(props) {
       <div className="info-container">
         <h1 className="title">The Adventure awaits!</h1>
         <h3 className="description">
-          Find your ideal trip from many of the travel pacages.
+          We bring you all the best travel for you to choose from and have the best adventure!
         </h3>
         
       </div>
