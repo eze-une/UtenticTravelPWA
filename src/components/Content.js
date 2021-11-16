@@ -4,7 +4,7 @@ import "./Content.css";
 function Content() {
   return (
     <div className="content-container">
-      <h1 className="Title">What Do We Have In Store For You?</h1>
+      <h1 className="titl">What Do We Have In Store For You?</h1>
       <div className="cards-container">
         <div className="card">
           <div className="pics">

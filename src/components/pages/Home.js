@@ -11,7 +11,7 @@ function Home() {
     <>
     <AutoSlide slides={SliderData}/>
       {/* <HeroPage /> */}
-      <SliderPage slides={SliderData} leng={SliderData.length}/>
+      {/* <SliderPage slides={SliderData} leng={SliderData.length}/> */}
       <Content />
       <Cards text="Check out These Destinations!" />
     </>

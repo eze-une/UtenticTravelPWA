@@ -26,7 +26,8 @@ const SliderPage = (props) => {
           className="icon right-arrow"
           onClick={nextSlide}
         />
-
+        {}
+        
         {props.slides.map((slide, index) => {
           return (
             <div

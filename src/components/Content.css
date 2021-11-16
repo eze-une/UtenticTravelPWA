@@ -4,10 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 90vh;
-  /* background-image: url(../Vector\ 2\ \(1\).png); */
-  background-repeat: no-repeat;
+  background-color: rgba(226, 21, 21, 0.904);
 }
-
 .cards-container {
   display: flex;
   flex-direction: row;
@@ -24,8 +22,9 @@
   height: 90%;
   margin: 10px;
   width: 25%;
-  padding: 5px;
+  padding: 20px;
   background-color: transparent;
+  color: white;
 }
 .pics {
   margin: auto;
@@ -33,25 +32,29 @@
   width: 200px;
   background-color: coral;
 }
-/* .image{
-    height: 100%;
-    width: 100%;
-} */
 .textcolumn {
   margin: 10px 0px 30px;
 }
 .link-container {
-  color: red;
+  color: rgb(0, 0, 0);
   width: 90px;
-  border-bottom: 1px solid rgb(255, 15, 55);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  line-height: 30px;
+}
+.link-container:hover{
+  color: red;
+  border-bottom: 1px solid red;
   line-height: 30px;
 }
 .card:hover {
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.397);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(255, 255, 255, 0.295));
+  filter: drop-shadow(0 6px 20px rgba(250, 251, 252, 0.123));
   overflow: hidden;
   transform: scale(1.1);
   background-color: white;
-  
+  color: black;
+}
+.titl{
+  color: aliceblue;
 }
