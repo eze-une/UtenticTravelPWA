@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./AutoSlide.css";
 
 function AutoSlide(props) {
-  // const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-  const colors = [
+  // const images = ["#0088FE", "#00C49F", "#FFBB28"];
+  const images = [
     `https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80`,
     `https://images.unsplash.com/photo-1624314138470-5a2f24623f10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80`,
     `https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80`,
@@ -26,7 +26,7 @@ function AutoSlide(props) {
     timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -41,7 +41,7 @@ function AutoSlide(props) {
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%,0,0` }}
       >
-        {colors.map((backgroundColor, index) => (
+        {images.map((backgroundColor, index) => (
           <div className="slides" key={index}>
             <img src={backgroundColor} style={{height:'100%', width: '100%', opacity:'0.6'}}/>
           </div>
@@ -49,7 +49,7 @@ function AutoSlide(props) {
       </div>
 
       {/* <div className="dots">
-        {colors.map((_, indx) => (
+        {images.map((_, indx) => (
           <div
             key={indx}
             className={`dot${index === indx ? " active" : ""}`}
