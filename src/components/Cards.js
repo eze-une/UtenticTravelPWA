@@ -1,56 +1,45 @@
 import React from "react";
-import CardItems from "./CardItems";
 import "./Cards.css";
 
-function Cards(props) {
+export default function Cards(props) {
   return (
     <div className="cards">
-      <h1> {props.text}</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
-            <CardItems
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWWUboXNc5BHzUXNfglewUktNqr5Cn9E8wzw&usqp=CAU'
-              text="Explore the hidden Waterfalls of Ensaro"
-              label="Adventure"
-              path="/services"
-            />
-            <CardItems
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWWUboXNc5BHzUXNfglewUktNqr5Cn9E8wzw&usqp=CAU'
-              text="Explore the hidden Waterfalls of Ensaro"
-              label="Adventure"
-              path="/services"
-            />
-            <CardItems
-              src='https://lp-cms-production.imgix.net/2020-12/shutterstockRF_1052066939.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850'
-              text="Explore the hidden beaches"
-              label="Hiking"
-              path="/services"
-            />
-          </ul>
-          <ul className="cards__items">
-            <CardItems
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWWUboXNc5BHzUXNfglewUktNqr5Cn9E8wzw&usqp=CAU'
-              text="Explore the hidden Waterfalls of Ensaro"
-              label="Adventure"
-              path="/services"
-            />
-            <CardItems
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWWUboXNc5BHzUXNfglewUktNqr5Cn9E8wzw&usqp=CAU'
-              text="Explore the hidden Waterfalls of Ensaro"
-              label="Adventure"
-              path="/services"
-            />
-            <CardItems
-              src='https://lp-cms-production.imgix.net/2020-12/shutterstockRF_1052066939.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850'
-              text="Explore the hidden beaches"
-              label="Hiking"
-              path="/services"
-            />
-          </ul>
-        </div>
+      <h1>{props.title}</h1>
+      <div className="main">
+        {props.data.map((item, index) => {
+          return (
+            <div className="main__container" key={index}>
+              <div className="card__container">
+                <li className="cards__item">
+                  <figure
+                    className="cards__item__pic-wrap"
+                    data-category={item.label}
+                  >
+                    <img
+                      src={item.src}
+                      alt="Travel"
+                      className="cards__item__img"
+                    ></img>
+                  </figure>
+
+                  <div className="cards__item__info">
+                    <h5 className="cards__item__text">{item.text}</h5>
+                  </div>
+                </li>
+              </div>
+            </div>
+          );
+        })}
       </div>
+      <h3 className="link">See More</h3>
     </div>
-  ); 
+  );
 }
-export default Cards;
+
+// const Container = (prop) => {
+//   return (
+//     <div style={{ height: "2300px", width: "514px", margin: "16px" }}>
+//       <Paper style={{ height: "20%", width: "234px" }} elevation={6} >{prop.title}</Paper>
+//     </div>
+//   );
+// }

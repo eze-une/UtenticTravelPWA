@@ -1,13 +1,14 @@
 .slideshow {
-  margin: 0 auto;
+  /* margin: 8rem; */
   overflow: hidden;
   max-width: 100%;
-  height: 85vh;
+  height: 100vh;
   background-color: black;
+  /* border-radius: 20px; */
 }
 .slideshowSlider {
   white-space: nowrap;
-  transition: ease 1000ms;
+  transition: ease 10000ms;
   height: 90vh;
 }
 .slides {

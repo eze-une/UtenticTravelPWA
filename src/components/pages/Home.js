@@ -4,16 +4,22 @@ import AutoSlide from "../AutoSlide";
 import Cards from "../Cards";
 import Content from "../Content";
 import { SliderData } from "../SliderData";
-import SliderPage from "../SliderPage";
+import { CardInfoData } from "../CardInfoData";
+import Footer from "../Footer";
+import Camping from "../Camping";
+import Hiking from "../Hiking";
 
 function Home() {
   return (
     <>
-    <AutoSlide slides={SliderData}/>
       {/* <HeroPage /> */}
-      {/* <SliderPage slides={SliderData} leng={SliderData.length}/> */}
+      <AutoSlide slides={SliderData} />
+      <Camping />
+      <Hiking />
       <Content />
-      <Cards text="Check out These Destinations!" />
+      <Cards title="Check out These Destinations!" data={CardInfoData} />
+      <Cards title="Trips happening this week..." data={CardInfoData} />
+      <Footer />
     </>
   );
 }

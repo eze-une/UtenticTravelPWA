@@ -1,0 +1,42 @@
+.camping-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .camping-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: chocolate; */
+  }
+  .description {
+    text-align: center;
+    width: 50%;
+    vertical-align: middle;
+    /* background-color: bisque; */
+    margin: 2rem;
+  }
+  .phto{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(182, 0, 39); */
+    display: flex;
+    background-image: url("../Group\ 1109.png"); 
+    background-repeat: no-repeat;
+  }
+  /* .image-one{ */
+      /* margin: 4rem; */
+      /* vertical-align: middle; */
+      /* width: 100%;
+      height: 100%; */
+      /* background-image: url("../Ellipse\ 49.png"); 
+      background-repeat: no-repeat; */
+      /* background-color: crimson; */
+  /* } */
+  

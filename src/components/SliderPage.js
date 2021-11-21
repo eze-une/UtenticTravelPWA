@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./SliderPage.css";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+
 const SliderPage = (props) => {
   const [currrent, setCurrrent] = useState(0);
 
@@ -36,6 +37,7 @@ const SliderPage = (props) => {
             >
               {index === currrent && (
                 <img src={slide.image} className="image" alt="images" />
+                // <img src={slide.image} className="image" alt="images" />
               )}
             </div>
           );

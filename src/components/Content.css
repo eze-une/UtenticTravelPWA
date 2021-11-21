@@ -40,17 +40,13 @@
   border-bottom: 1px solid rgb(255, 0, 0);
   line-height: 30px;
 }
-/* .link-container:hover{
-  color: red;
-  border-bottom: 1px solid red;
-  line-height: 30px;
-} */
 .card:hover {
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  box-shadow: 0 6px 20px rgba(56, 126, 255, 0.473);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    
   overflow: hidden;
-  transform: scale(1.1);
-  background-color: white;
-  color: black;
+  transform: scale(1.05);
+  /* background-color: rgb(255, 0, 0); */
+  color: rgb(0, 0, 0); 
 }
