@@ -24,12 +24,14 @@
   border-radius: 40px;
   cursor: pointer;
   margin: 20px 30px;
-  background-color: #c4c4c4;
+  background-color: transparent;
   top: 60%;
   position: relative;
+  border: solid 2px #c4c4c4;
 }
 .dot.active {
   background-color: #df1010;
+  border: none;
 }
 
 .info-container {
