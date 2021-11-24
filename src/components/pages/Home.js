@@ -19,13 +19,13 @@ function Home() {
         imagesrc={travel01}
         title={`Explore the wonders of nature`}
         subtitle={`Our platform can help you find the perfect trip for you and help you ceonnect with nature`}
-        flipped={true}
+        flipped={false}
       />
       <Details
         imagesrc={travel02}
         title={`Discover Local cultures`}
         subtitle={`Our platform can help you find the perfect trip for you and help you ceonnect with nature`}
-        flipped={false}
+        flipped={true}
       />
       <Content />
       <Cards title="Check out These Destinations!" data={CardInfoData} />

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  margin-top: 2rem;
   background-color: rgba(255, 255, 255, 0.904);
 }
 .cards-container {
@@ -12,7 +12,9 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 80%;
+}
+.titl{
+  margin: 2rem;
 }
 .card {
   text-align: left;
@@ -26,6 +28,7 @@
   background-color: transparent;
 }
 .pics {
+  padding: 20px;
   margin: auto;
   height: 200px;
   width: 200px;
@@ -47,6 +50,18 @@
   border-radius: 10px;
   overflow: hidden;
   transform: scale(1.05);
-  /* background-color: rgb(255, 0, 0); */
-  color: rgb(0, 0, 0); 
+  color: rgb(0, 0, 0);
+}
+@media screen and (max-width:800px) {
+  .cards-container{
+    flex-direction: column;
+  }
+  .content-container{
+    margin-top: 1rem;
+  }
+  .card{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
 }

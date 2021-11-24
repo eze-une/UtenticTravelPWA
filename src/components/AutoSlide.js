@@ -47,7 +47,13 @@ function AutoSlide(props) {
           </div>
         ))}
       </div>
-
+      <div className="info-container">
+        <h1 className="title">The Adventure awaits!</h1>
+        <h3 className="description">
+          We bring you all the best travel for you to choose from and have the best adventure!
+        </h3>
+        
+      </div>
       <div className="dots">
         {images.map((_, indx) => (
           <div
@@ -59,13 +65,7 @@ function AutoSlide(props) {
           ></div>
         ))}
       </div>
-      <div className="info-container">
-        <h1 className="title">The Adventure awaits!</h1>
-        <h3 className="description">
-          We bring you all the best travel for you to choose from and have the best adventure!
-        </h3>
-        
-      </div>
+      
     </div>
   );
 }

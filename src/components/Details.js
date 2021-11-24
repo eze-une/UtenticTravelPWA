@@ -14,7 +14,7 @@ const Details = ({ imagesrc, title, subtitle, flipped }) => {
           <img src={imagesrc} className="slider-image" alt="Travel" />
           <div className="slider-content">
             <h1 className="slider-title">{title}</h1>
-            <p>{subtitle}</p>
+            <p className="slider-subtitle">{subtitle}</p>
           </div>
         </>
       );
@@ -23,7 +23,7 @@ const Details = ({ imagesrc, title, subtitle, flipped }) => {
         <>
           <div className="slider-content">
             <h1 className="slider-title">{title}</h1>
-            <p>{subtitle}</p>
+            <p className="slider-subtitle">{subtitle}</p>
           </div>
           <img src={imagesrc} className="slider-image" alt="Travel" />
         </>
