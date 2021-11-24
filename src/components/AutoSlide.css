@@ -45,12 +45,4 @@
   left: 50%;
   margin-top: -70.8px;
   margin-left: -23rem;
-  opacity: 0;
-  transform: scale(85%);
-  transition: 2s;
-}
-.info-container-zoom{
-  opacity: 1;
-  transform: scale(100%);
-  transition: 2s;
 }
