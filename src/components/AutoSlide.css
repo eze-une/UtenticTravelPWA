@@ -6,7 +6,7 @@
 }
 .slideshowSlider {
   white-space: nowrap;
-  transition: ease 20000ms;
+  transition: ease 10000ms;
   height: 90vh;
 }
 .slides {
@@ -45,4 +45,12 @@
   left: 50%;
   margin-top: -70.8px;
   margin-left: -23rem;
+  opacity: 0;
+  transform: scale(85%);
+  transition: 2s;
+}
+.info-container-zoom{
+  opacity: 1;
+  transform: scale(100%);
+  transition: 2s;
 }

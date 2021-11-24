@@ -1,11 +1,18 @@
 import React, { useState } from "react";
+import { useInView } from 'react-intersection-observer';
 import "./AutoSlide.css";
 
 function AutoSlide(props) {
+  const { ref, inView} = useInView({
+    threshold: 0.4,
+  });
+
   const images = [
     `https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80`,
     `https://images.unsplash.com/photo-1624314138470-5a2f24623f10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80`,
-    `https://images.unsplash.com/photo-1572888195250-3037a59d3578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80`
+    `https://images.unsplash.com/photo-1572888195250-3037a59d3578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80`,
+    `https://images.unsplash.com/photo-1516533075015-a3838414c3ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    `https://images.unsplash.com/photo-1508914127305-fa5114b81b3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
   ];
   const delay = 3500;
   const [index, setIndex] = useState(0);
@@ -41,7 +48,7 @@ function AutoSlide(props) {
       >
         {images.map((backgroundColor, index) => (
           <div className="slides" key={index}>
-            <img src={backgroundColor} style={{height:'108%', width: '100%', opacity:'0.8'}}/>
+            <img src={backgroundColor} style={{height:'108%', width: '100%'}}/>
           </div>
         ))}
       </div>
@@ -57,7 +64,7 @@ function AutoSlide(props) {
           ></div>
         ))}
       </div>
-      <div className="info-container">
+      <div className={inView ? "info-container info-container-zoom": "info-conatiner"} ref={ref}>
         <h1 className="title">The Adventure awaits!</h1>
         <h3 className="description">
           We bring you all the best travel for you to choose from and have the best adventure!
