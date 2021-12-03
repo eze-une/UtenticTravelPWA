@@ -1,5 +1,9 @@
 import React from "react";
 import "./Content.css";
+import camping from "../camping-tent.png";
+import citywalks from "../city.png"
+import values from "../Group 1114.png"
+import hiking from "../hiking (1).png"
 
 function Content() {
   return (
@@ -7,9 +11,7 @@ function Content() {
       <h1 className="titl">What Do We Have In Store For You?</h1>
       <div className="cards-container">
         <div className="card">
-          <div className="pics">
-            {/* <img src={cherry} alt="hike" className="image" width="100" height="100"/> */}
-          </div>
+        <img src={values} className="icon" alt="camping"/>
           <h3>Our added value</h3>
           <div className="textcolumn">
             <p>
@@ -24,9 +26,7 @@ function Content() {
         </div>
 
         <div className="card">
-          <div className="pics">
-            {/* <img src={cherry} alt="hike" className="image" width="100" height="100"/> */}
-          </div>
+        <img src={hiking} className="icon" alt="camping"/>
           <h3>Hiking</h3>
           <div className="textcolumn">
             <p>
@@ -41,9 +41,7 @@ function Content() {
         </div>
 
         <div className="card">
-        <div className="pics">
-            {/* <img src={cherry} alt="hike" className="image" width="100" height="100"/> */}
-          </div>
+        <img src={camping} className="icon" alt="camping"/>
           <h3>Camping</h3>
           <div className="textcolumn">
             <p>
@@ -53,13 +51,12 @@ function Content() {
             </p>
           </div>
           <div className="link-container">
-              <span>Read more</span></div>
+            <span>Read more</span>
+          </div>
         </div>
 
         <div className="card">
-        <div className="pics">
-            {/* <img src={cherry} alt="hike" className="image" width="100" height="100"/> */}
-          </div>
+        <img src={citywalks} className="icon" alt="camping"/>
           <h3>City Walks</h3>
           <div className="textcolumn">
             <p>
@@ -69,7 +66,8 @@ function Content() {
             </p>
           </div>
           <div className="link-container">
-              <span>Read more</span></div>
+            <span>Read more</span>
+          </div>
         </div>
       </div>
     </div>

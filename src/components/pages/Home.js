@@ -8,13 +8,15 @@ import { CardInfoData } from "../CardInfoData";
 import Footer from "../Footer";
 import Details from "../Details";
 import travel01 from "../../Ellipse 49.png";
-import travel02 from "../../Group 1109.png";
+import travel02 from "../../Group 1112.png";
 
 function Home() {
   return (
     <>
       {/* <HeroPage /> */}
       <AutoSlide slides={SliderData} />
+      <Cards title="Check out These Destinations!" data={CardInfoData} />
+      <Cards title="Trips happening this week..." data={CardInfoData} />
       <Details
         imagesrc={travel01}
         title={`Explore the wonders of nature`}
@@ -28,8 +30,6 @@ function Home() {
         flipped={true}
       />
       <Content />
-      <Cards title="Check out These Destinations!" data={CardInfoData} />
-      <Cards title="Trips happening this week..." data={CardInfoData} />
       <Footer />
     </>
   );

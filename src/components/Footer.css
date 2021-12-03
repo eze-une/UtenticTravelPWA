@@ -26,6 +26,15 @@
 .footer-head{
     margin-bottom:2rem;
 }
+@media screen and (max-width:700px){
+    .footer-container{
+        background-color: rgb(161, 8, 8);
+        background-image: none;
+    }
+    .info-conatiner{
+        padding-top: 4rem;
+    }
+}
 /* .info-container{
     background-color: coral;
     height: 1000px;

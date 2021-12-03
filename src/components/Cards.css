@@ -1,5 +1,5 @@
 .cards {
-    padding: 1rem 3rem 3rem 8rem;
+    padding: 1rem 3rem 3rem 3rem;
     margin-right: 3rem;
   }
 h1 {
@@ -10,6 +10,7 @@ h1 {
   text-align: right;
   color: red;
   cursor: pointer;
+  margin-right: 30px;
 }
 .main {
   width: 100%;
@@ -115,8 +116,7 @@ h1 {
 }
 @media screen and (max-width:800px) {
   .cards{
-    margin: 0px;
     padding: 0px;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
 }

@@ -27,12 +27,12 @@
   padding: 20px;
   background-color: transparent;
 }
-.pics {
+.icon {
   padding: 20px;
   margin: auto;
   height: 200px;
   width: 200px;
-  background-color: coral;
+  /* background-color: coral; */
 }
 .textcolumn {
   margin: 10px 0px 30px;

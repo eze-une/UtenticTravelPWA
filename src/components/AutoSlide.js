@@ -48,11 +48,11 @@ function AutoSlide(props) {
         ))}
       </div>
       <div className="info-container">
-        <h1 className="title">The Adventure awaits!</h1>
+        <h1 className="title">Explore The Authentic!</h1>
         <h3 className="description">
-          We bring you all the best travel for you to choose from and have the best adventure!
-        </h3>
-        
+        Find the best travel packages 
+in one place.        </h3>
+        <button className="button">Explore Now </button>
       </div>
       <div className="dots">
         {images.map((_, indx) => (
