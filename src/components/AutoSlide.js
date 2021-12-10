@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./AutoSlide.css";
+import { Button, Icon } from "semantic-ui-react";
 
 function AutoSlide(props) {
   const images = [
@@ -7,7 +8,7 @@ function AutoSlide(props) {
     `https://images.unsplash.com/photo-1624314138470-5a2f24623f10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80`,
     `https://images.unsplash.com/photo-1572888195250-3037a59d3578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80`,
     `https://images.unsplash.com/photo-1516533075015-a3838414c3ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    `https://images.unsplash.com/photo-1508914127305-fa5114b81b3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`
+    `https://images.unsplash.com/photo-1508914127305-fa5114b81b3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
   ];
   const delay = 3500;
   const [index, setIndex] = useState(0);
@@ -43,16 +44,27 @@ function AutoSlide(props) {
       >
         {images.map((backgroundColor, index) => (
           <div className="slides" key={index}>
-            <img src={backgroundColor} style={{height:'108%', width: '100%'}}/>
+            <img
+              src={backgroundColor}
+              style={{ height: "108%", width: "100%" }}
+            />
           </div>
         ))}
       </div>
       <div className="info-container">
         <h1 className="title">Explore The Authentic!</h1>
         <h3 className="description">
-        Find the best travel packages 
-in one place.        </h3>
-        <button className="button">Explore Now </button>
+          Find the best travel packages in one place.{" "}
+        </h3>
+        <div className="button">
+        <Button animated className="button">
+          <Button.Content style={{color: '#f1f9ff', backgroundColor:'#df1010', margin: '0px', height:'40px'}} visible>ExploreNow</Button.Content>
+          <Button.Content hidden style={{color:'#f1f9ff', backgroundColor:'#df1010', margin: '0px', height:'40px'}}>
+            <Icon name="arrow right" />
+          </Button.Content>
+        </Button>
+        </div>
+        
       </div>
       <div className="dots">
         {images.map((_, indx) => (
@@ -65,7 +77,6 @@ in one place.        </h3>
           ></div>
         ))}
       </div>
-      
     </div>
   );
 }

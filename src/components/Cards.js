@@ -1,4 +1,5 @@
 import React from "react";
+import SingleCard from "../SingleCard";
 import "./Cards.css";
 
 export default function Cards(props) {
@@ -9,7 +10,7 @@ export default function Cards(props) {
         {props.data.map((item, index) => {
           return (
             <div className="main__container" key={index}>
-              <div className="card__container">
+              {/* <div className="card__container">
                 <li className="cards__item">
                   <figure
                     className="cards__item__pic-wrap"
@@ -26,7 +27,13 @@ export default function Cards(props) {
                     <h5 className="cards__item__text">{item.text}</h5>
                   </div>
                 </li>
-              </div>
+              </div> */}
+              <SingleCard
+                data-category={item.label}
+                src={item.src}
+                text={item.text}
+                label={item.label}
+              />
             </div>
           );
         })}
@@ -35,11 +42,3 @@ export default function Cards(props) {
     </div>
   );
 }
-
-// const Container = (prop) => {
-//   return (
-//     <div style={{ height: "2300px", width: "514px", margin: "16px" }}>
-//       <Paper style={{ height: "20%", width: "234px" }} elevation={6} >{prop.title}</Paper>
-//     </div>
-//   );
-// }

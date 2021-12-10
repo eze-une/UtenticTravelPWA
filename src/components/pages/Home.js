@@ -10,10 +10,11 @@ import Details from "../Details";
 import travel01 from "../../Ellipse 49.png";
 import travel02 from "../../Group 1112.png";
 
+// amplitude.getInstance().logEvent('visitedHomePage');
+
 function Home() {
   return (
     <>
-      {/* <HeroPage /> */}
       <AutoSlide slides={SliderData} />
       <Cards title="Check out These Destinations!" data={CardInfoData} />
       <Cards title="Trips happening this week..." data={CardInfoData} />

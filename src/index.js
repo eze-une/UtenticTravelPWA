@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {initAmplitude} from './components/utilities/amplitude';
+import 'semantic-ui-css/semantic.min.css';
+
+initAmplitude();
 
 ReactDOM.render(
   <React.StrictMode>

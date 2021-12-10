@@ -54,14 +54,17 @@
   border: none;
   margin: 30px;
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 40px;
   color: white;
   width: 50%;
   align-self: center;
   /* font-weight: bold; */
   font-size: 20px;
 }
-
+.inside-button{
+  background-color: #f1f9ff;
+  color: rgb(238, 246, 253);
+}
 .right-pointer{
   margin-left: 20px;
 }
