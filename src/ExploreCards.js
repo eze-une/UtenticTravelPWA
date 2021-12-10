@@ -5,7 +5,7 @@ import { Grid } from "semantic-ui-react";
 
 function ExploreCards(props) {
   return (
-    <div style={{margin:'1rem'}}>
+    <div style={{margin:'6rem'}}>
         <h2 style={{margin:'0px 30px '}}>{props.title}</h2>
       <Grid>
         {props.data.slice(0,4).map((item, index) => {
