@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {initAmplitude} from './components/utilities/amplitude';
 import 'semantic-ui-css/semantic.min.css';
+import Footer from './components/Footer';
 
 initAmplitude();
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
