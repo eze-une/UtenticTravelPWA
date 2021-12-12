@@ -20,9 +20,6 @@ function Content() {
               you
             </p>
           </div>
-          <div className="link-container">
-            <span>Read more</span>
-          </div>
         </div>
 
         <div className="card">
@@ -34,9 +31,6 @@ function Content() {
               Choose by price and destination and find the trip that works for
               you
             </p>
-          </div>
-          <div className="link-container">
-            <span>Read more</span>
           </div>
         </div>
 
@@ -50,9 +44,6 @@ function Content() {
               you
             </p>
           </div>
-          <div className="link-container">
-            <span>Read more</span>
-          </div>
         </div>
 
         <div className="card">
@@ -64,9 +55,6 @@ function Content() {
               Choose by price and destination and find the trip that works for
               you
             </p>
-          </div>
-          <div className="link-container">
-            <span>Read more</span>
           </div>
         </div>
       </div>
