@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./AutoSlide.css";
 import { Button, Icon } from "semantic-ui-react";
 
@@ -57,14 +58,36 @@ function AutoSlide(props) {
           Find the best travel packages in one place.{" "}
         </h3>
         <div className="button">
-        <Button animated className="button">
-          <Button.Content style={{color: '#f1f9ff', backgroundColor:'#df1010', margin: '0px', height:'40px'}} visible>ExploreNow</Button.Content>
-          <Button.Content hidden style={{color:'#f1f9ff', backgroundColor:'#df1010', margin: '0px', height:'40px'}}>
-            <Icon name="arrow right" />
-          </Button.Content>
-        </Button>
+          <Link to="/Explore" className="explore-button">
+            <Button
+              animated
+              style={{
+                backgroundColor: "transparent",
+                fontSize: "20px",
+                margin: "-6rem",
+                width: "100%",
+              }}
+            >
+              <Button.Content
+                style={{ color: "#f1f9ff", backgroundColor: "red" }}
+                visible
+              >
+                Explore Now
+              </Button.Content>
+              <Button.Content
+                hidden
+                style={{
+                  color: "#f1f9ff",
+                  backgroundColor: "red",
+                  marginLeft: "-2rem",
+                  marginTop: "-2rem",
+                }}
+              >
+                <Icon name="arrow right" />
+              </Button.Content>
+            </Button>
+          </Link>
         </div>
-        
       </div>
       <div className="dots">
         {images.map((_, indx) => (
