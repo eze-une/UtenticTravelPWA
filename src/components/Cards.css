@@ -1,6 +1,6 @@
 .cards {
     padding: 1rem 3rem 3rem 3rem;
-    margin-right: 3rem;
+    margin-left: 9rem;
   }
 h1 {
   text-align:left;
@@ -8,18 +8,17 @@ h1 {
 }
 .link{  
   text-align: right;
-  color: red;
+  color: #ff0000;
   cursor: pointer;
-  margin-right: 30px;
 }
 .main {
   width: 100%;
   overflow: auto;
   display: flex;
-  margin: 1.5rem 4rem 1rem 1rem;
+  margin: 1.5rem 4rem 1rem 4rem;
 }
 .main__container {
-  margin: 16px;
+  margin: 10px 20px 20px 10px;
 }
 .card__container {
   height: 100%;

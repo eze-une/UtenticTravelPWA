@@ -15,10 +15,9 @@ import HomeSlider from "../HomeSlider";
 function Home() {
   return (
     <>
-      <AutoSlide slides={SliderData} show={3}/>
-      <HomeSlider data={CardInfoData} />
+      <AutoSlide slides={SliderData}/>
       <Content />
-      <Cards title="Check out These Destinations!" data={CardInfoData} />
+      <HomeSlider data={CardInfoData} title="Check out These Destinations!"/>
       <Details
         imagesrc={travel01}
         title={`Explore the wonders of nature`}
