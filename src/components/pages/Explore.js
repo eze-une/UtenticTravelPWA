@@ -1,6 +1,6 @@
 import React from "react";
 import { CardInfoData } from "../CardInfoData";
-import ExploreCards from "../../ExploreCards";
+import ExploreCards from "../ExploreCards";
 function Explore() {
   return (
     <div>

@@ -18,7 +18,6 @@ function Home() {
       <AutoSlide slides={SliderData}/>
       <Content />
       <HomeSlider data={CardInfoData} title="Check out These Destinations!"/>
-      <Cards title="Check out These Destinations!" data={CardInfoData} />
       <Details
         imagesrc={travel01}
         title={`Explore the wonders of nature`}
