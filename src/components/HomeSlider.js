@@ -22,13 +22,14 @@ function HomeSlider(props, show) {
   );
   return (
     <>
-      <h1 style={{ marginLeft: "7rem" }}>{props.title}</h1>
+      <h1 style={{ marginLeft: "6rem" }}>{props.title}</h1> 
       <div
         style={{
           cursor: "pointer",
           display: "flex",
           padding: "20px",
-          margin: "14px",
+          margin: "50px",
+          marginTop:"10px"
         }}
       >
         <Carousel
@@ -53,6 +54,7 @@ function HomeSlider(props, show) {
           })}
         </Carousel>
       </div>
+      <h3 className="link">See More <i class="angle double right icon #ff0000" style={{marginRight:'6rem', marginLeft:'-1rem'}}></i></h3>
     </>
   );
 }
