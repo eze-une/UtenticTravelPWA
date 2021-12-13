@@ -1,5 +1,5 @@
 .navbar {
-    background: rgba(0, 0, 0, 0.61);
+    background: #ff0012;
     height: 60px;
     width: 100%;
     display: flex;
@@ -24,7 +24,7 @@
   }
   
   .navbar-logo {
-    color: red;
+    color: white;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -60,10 +60,16 @@
   }
   
   .nav-links:hover {
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid white;
     transition: all 0.5s ease-out;
+    color: white;
   }
   
+  .navbar_button {
+    text-decoration: none;
+    color: white;
+  }
+
   .fa-bars {
     color: red;
   }
@@ -117,6 +123,14 @@
       background-color:#fff ;
       color: black;
       border-radius: 0;
+    }
+
+    .navbar_button {
+      color: white;
+    }
+
+    .navbar_button:hover {
+      color: red;
     }
   
     .navbar-logo {
