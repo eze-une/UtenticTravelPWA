@@ -47,7 +47,7 @@ function AutoSlide(props) {
           <div className="slides" key={index}>
             <img
               src={backgroundColor}
-              style={{ height: "108%", width: "100%" }}
+              style={{ height: "108%", width: "100%" ,opacity:'0.5'}}
             />
           </div>
         ))}

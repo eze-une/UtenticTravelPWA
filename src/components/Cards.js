@@ -10,24 +10,6 @@ export default function Cards(props) {
         {props.data.map((item, index) => {
           return (
             <div className="main__container" key={index}>
-              {/* <div className="card__container">
-                <li className="cards__item">
-                  <figure
-                    className="cards__item__pic-wrap"
-                    data-category={item.label}
-                  >
-                    <img
-                      src={item.src}
-                      alt="Travel"
-                      className="cards__item__img"
-                    ></img>
-                  </figure>
-
-                  <div className="cards__item__info">
-                    <h5 className="cards__item__text">{item.text}</h5>
-                  </div>
-                </li>
-              </div> */}
               <SingleCard
                 data-category={item.label}
                 src={item.src}

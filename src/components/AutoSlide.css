@@ -3,11 +3,13 @@
   max-width: 100%;
   height: 100vh;
   margin-top: -5rem;
+  margin-bottom: 4rem;
+  background-color: black;
 }
 .slideshowSlider {
   white-space: nowrap;
   transition: ease 10000ms;
-  height: 93vh;
+  height: 92vh;
 }
 .slides {
   display: inline-block;
