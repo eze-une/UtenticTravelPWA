@@ -1,7 +1,9 @@
 import amplitude from "amplitude-js";
+const key = "d90206e2a94cd7ca9f33e049df7fd918";
 
 export const initAmplitude = () => {
-  amplitude.getInstance().init(process.env.REACT_APP_AMPLITUDE);
+  console.log("API Key: ", key);
+  amplitude.getInstance().init(key);
 };
 export const setAmplitudeUserDevice = (installationToken) => {
   amplitude.getInstance().setDeviceId(installationToken);

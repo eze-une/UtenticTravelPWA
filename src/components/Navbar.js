@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "./Navbar.css";
+import {sendAmplitudeData} from './utilities/amplitude';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -10,6 +11,15 @@ function Navbar() {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    const exploreButton = () => {
+        var event = "Explore Button Clicked";
+        var eventProperties = {
+            "Test": "Hello"
+        };
+        console.log(event, eventProperties);
+        setClick(false);
+        sendAmplitudeData(event, eventProperties);
+    };
 
     const showButton=()=>{
         if(window.innerWidth<=700){
@@ -44,7 +54,7 @@ function Navbar() {
                             <Link
                                 to="/explore"
                                 className="nav-links"
-                                onClick={closeMobileMenu}
+                                onClick={exploreButton}
                             >
                                 Explore
                             </Link>
