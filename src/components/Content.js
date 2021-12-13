@@ -10,7 +10,8 @@ function Content() {
     <div className="content-container">
       <h1 className="titl">What Do We Have In Store For You?</h1>
       <div className="cards-container">
-        <div className="card">
+
+        {/* <div className="card">
         <img src={values} className="icon" alt="camping"/>
           <h3>Our added value</h3>
           <div className="textcolumn">
@@ -20,10 +21,7 @@ function Content() {
               you
             </p>
           </div>
-          <div className="link-container">
-            <span>Read more</span>
-          </div>
-        </div>
+        </div> */}
 
         <div className="card">
         <img src={hiking} className="icon" alt="camping"/>
@@ -34,9 +32,6 @@ function Content() {
               Choose by price and destination and find the trip that works for
               you
             </p>
-          </div>
-          <div className="link-container">
-            <span>Read more</span>
           </div>
         </div>
 
@@ -50,9 +45,6 @@ function Content() {
               you
             </p>
           </div>
-          <div className="link-container">
-            <span>Read more</span>
-          </div>
         </div>
 
         <div className="card">
@@ -64,9 +56,6 @@ function Content() {
               Choose by price and destination and find the trip that works for
               you
             </p>
-          </div>
-          <div className="link-container">
-            <span>Read more</span>
           </div>
         </div>
       </div>

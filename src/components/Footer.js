@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer-container">
-      <div className="info-conatiner">
+      {/* <div className="info-conatiner">
         <div className="footer-info">
           <div className="footer-element">
             <h1 className="footer-head">Utentic</h1>
@@ -34,7 +34,7 @@ function Footer() {
             <h3>Discounted Packages</h3>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

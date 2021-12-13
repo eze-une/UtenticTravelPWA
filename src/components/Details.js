@@ -1,11 +1,18 @@
 import React from "react";
-import { useInView } from 'react-intersection-observer';
-import './Details.css'
+import { useInView } from "react-intersection-observer";
+import "./Details.css";
 
-const Details = ({ imagesrc, title, subtitle, flipped }) => {
-    const { ref, inView } = useInView({
-        threshold: 0.4,
-      });    
+const Details = ({
+  imagesrc,
+  title,
+  description,
+  subtitle,
+  subtitleDescription,
+  flipped,
+}) => {
+  const { ref, inView } = useInView({
+    threshold: 0.4,
+  });
 
   const renderContent = () => {
     if (!flipped) {
@@ -14,7 +21,19 @@ const Details = ({ imagesrc, title, subtitle, flipped }) => {
           <img src={imagesrc} className="slider-image" alt="Travel" />
           <div className="slider-content">
             <h1 className="slider-title">{title}</h1>
-            <p className="slider-subtitle">{subtitle}</p>
+            <h2 className="slider-description">{description}</h2>
+            <div className="slider-details">
+              <h3 className="slider-subtitle">{subtitle}</h3>
+              <p>{subtitleDescription}</p>
+            </div>
+            <div className="slider-details">
+              <h3 className="slider-subtitle">{subtitle}</h3>
+              <p>{subtitleDescription}</p>
+            </div>
+            <div className="slider-details">
+              <h3 className="slider-subtitle">{subtitle}</h3>
+              <p>{subtitleDescription}</p>
+            </div>
           </div>
         </>
       );
@@ -23,14 +42,31 @@ const Details = ({ imagesrc, title, subtitle, flipped }) => {
         <>
           <div className="slider-content">
             <h1 className="slider-title">{title}</h1>
-            <p className="slider-subtitle">{subtitle}</p>
+            <h2 className="slider-description">{description}</h2>
+            <div className="slider-details">
+              <h3 className="slider-subtitle">{subtitle}</h3>
+              <p>{subtitleDescription}</p>
+            </div>
+            <div className="slider-details">
+              <h3 className="slider-subtitle">{subtitle}</h3>
+              <p>{subtitleDescription}</p>
+            </div>
+            <div className="slider-details">
+              <h3 className="slider-subtitle">{subtitle}</h3>
+              <p>{subtitleDescription}</p>
+            </div>
           </div>
           <img src={imagesrc} className="slider-image" alt="Travel" />
         </>
       );
     }
   };
-  return <div className={inView ? "slider slider-zoom" : "slider"} ref={ref}> {renderContent()}</div>;
+  return (
+    <div className={inView ? "slider slider-zoom" : "slider"} ref={ref}>
+      {" "}
+      {renderContent()}
+    </div>
+  );
 };
 
 export default Details;

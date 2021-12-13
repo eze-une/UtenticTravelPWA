@@ -5,30 +5,35 @@ import "./Navbar.css";
 import {sendAmplitudeData} from './utilities/amplitude';
 
 function Navbar() {
-    const [click, setClick] = useState(false);
-    const [button,setButton]=useState(true);
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+  const [navbar, setNavbar] = useState(false);
 
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);    
+  const exploreButton = () => {
+      var event = "Explore Button Clicked";
+      var eventProperties = {
+          "Test": "Hello"
+      };
+      console.log(event, eventProperties);
+      setClick(false);
+      sendAmplitudeData(event, eventProperties);
+  };
 
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
-    const exploreButton = () => {
-        var event = "Explore Button Clicked";
-        var eventProperties = {
-            "Test": "Hello"
-        };
-        console.log(event, eventProperties);
-        setClick(false);
-        sendAmplitudeData(event, eventProperties);
-    };
-
-    const showButton=()=>{
-        if(window.innerWidth<=700){
-            setButton(false);
-        }else{
-            setButton(true);
-        }
+  const showButton = () => {
+    if (window.innerWidth <= 700) {
+      setButton(false);
+    } else {
+      setButton(true);
     }
-    window.addEventListener('resize',showButton)
+  };
+  window.addEventListener("resize", showButton);
+
+  const changeBackground = () => {
+    console.log(window.scrollY);
+  };
+  window.addEventListener("srcoll", changeBackground);
 
     return (
         <>

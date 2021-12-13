@@ -8,7 +8,7 @@ function ExploreCards(props) {
     <div style={{margin:'6rem'}}>
         <h2 style={{margin:'0px 30px '}}>{props.title}</h2>
       <Grid>
-        {props.data.slice(0,4).map((item, index) => {
+        {props.data.map((item, index) => {
           return (
             <Grid.Column width={4}>
               <div className="main__container" key={index}>
