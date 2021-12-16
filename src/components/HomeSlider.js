@@ -33,7 +33,7 @@ function HomeSlider(props, show) {
         }}
       >
         <Carousel
-          show={4.3}
+          show={4}
           slide={1}
           swiping={true}
           infinite={false}
