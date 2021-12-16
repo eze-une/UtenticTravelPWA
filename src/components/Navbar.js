@@ -58,7 +58,7 @@ function Navbar() {
 						</li>
 					</ul>
 
-					<button class="ui inverted button">
+					<button className="navbar_button" class="ui black basic button">
 						<a href="http://bit.ly/31YBqZU">Join Us On Telegram</a>
 					</button>
 				</div>
