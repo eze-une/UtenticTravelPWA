@@ -47,7 +47,7 @@ function AutoSlide(props) {
           <div className="slides" key={index}>
             <img
               src={backgroundColor}
-              style={{ height: "108%", width: "100%" ,opacity:'0.5'}}
+              style={{ height: "108%", width: "100%", opacity: "0.5" }}
             />
           </div>
         ))}
@@ -57,9 +57,9 @@ function AutoSlide(props) {
         <h3 className="description">
           Find the best travel packages in one place.{" "}
         </h3>
-        <div className="button">
+        <div /*className="button"*/>
           <Link to="/Explore" className="explore-button">
-            <Button
+            {/* <Button
               animated
               style={{
                 backgroundColor: "transparent",
@@ -69,7 +69,7 @@ function AutoSlide(props) {
               }}
             >
               <Button.Content
-                style={{ color: "#f1f9ff", backgroundColor: "red" }}
+                style={{ color: "green", backgroundColor: "red" }}
                 visible
               >
                 Explore Now
@@ -85,11 +85,16 @@ function AutoSlide(props) {
               >
                 <Icon name="arrow right" />
               </Button.Content>
-            </Button>
+            </Button> */}
+            <div className="ui animated button" style={{backgroundColor:'red',color:"white",borderRadius:'30px', marginTop:'10px'}}>
+              <div class="visible content"  style={{height:"30px",marginTop:'1rem'}}>Explore Now</div>
+              <div class="hidden content"  style={{height:"50px", marginTop:'-2rem'}}>
+                <i class="right arrow icon"></i>
+              </div>
+            </div>
           </Link>
         </div>
-      </div>
-      <div className="dots">
+        <div className="dots">
         {images.map((_, indx) => (
           <div
             key={indx}
@@ -99,6 +104,7 @@ function AutoSlide(props) {
             }}
           ></div>
         ))}
+      </div>
       </div>
     </div>
   );
