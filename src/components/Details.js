@@ -1,6 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import "./Details.css";
+import "./Cards.css";
 
 const Details = ({
   imagesrc,
