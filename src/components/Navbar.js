@@ -58,7 +58,7 @@ function Navbar() {
 						</li>
 					</ul>
 
-					<button className="navbar_button" class="ui black basic button">
+					<button class="ui black basic button">
 						<a href="http://bit.ly/31YBqZU">Join Us On Telegram</a>
 					</button>
 				</div>
