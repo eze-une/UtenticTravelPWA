@@ -3,7 +3,7 @@ import './Describe.css'
 function Describe() {
     return (
         <div className='describe-card-container'>
-            <div className='details'></div>
+            <div className='card-details'></div>
             
         </div>
     )
