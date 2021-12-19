@@ -29,9 +29,6 @@ function Home() {
           />
         );
       })}
-
-      <Content />
-
       <Testimonials />
     </>
   );
