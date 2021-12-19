@@ -19,10 +19,12 @@ h1 {
 }
 .main__container {
   margin: 10px 20px 20px 10px;
+  /* background-color:crimson; */
 }
 .card__container {
   height: 100%;
   width: 100%;
+  /* background-color: crimson; */
 }
 
 .cards__item {
@@ -115,9 +117,16 @@ h1 {
   background-color: red;
   border-radius: 20px;
 }
+
+.cards__item__price{
+  font-weight: lighter;
+}
 @media screen and (max-width:800px) {
   .cards{
     padding: 0px;
-    margin: 2rem 0;
+    margin: 0;
+  }
+  .main{
+    margin: 0px;
   }
 }
