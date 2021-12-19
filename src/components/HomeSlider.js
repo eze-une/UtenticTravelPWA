@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "@trendyol-js/react-carousel";
 import SingleCard from "../SingleCard";
 import { Icon } from "semantic-ui-react";
-
+import './Cards.css'
 function HomeSlider(props, show) {
   const RightArrow = (
     <div>
