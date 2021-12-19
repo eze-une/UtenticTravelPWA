@@ -1,6 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import "./Cards.css";
+import "./Details.css";
 
 const Details = ({
   imagesrc,
@@ -18,9 +18,8 @@ const Details = ({
     if (!flipped) {
       return (
         <>
-          <img src={imagesrc} className="slider-image" alt="Travel" />
+          <img  className="slider-image" alt="Travel" />
           <div className="slider-content">
-            <h1 className="slider-title">{title}</h1>
             <h2 className="slider-description">{description}</h2>
             <div className="slider-details">
               <h3 className="slider-subtitle">{subtitle}</h3>
@@ -56,7 +55,7 @@ const Details = ({
               <p>{subtitleDescription}</p>
             </div>
           </div>
-          <img src={imagesrc} className="slider-image" alt="Travel" />
+          {/* <img src={imagesrc} className="slider-image" alt="Travel" /> */}
         </>
       );
     }
