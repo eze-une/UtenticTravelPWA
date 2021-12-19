@@ -37,7 +37,6 @@ const SliderPage = (props) => {
             >
               {index === currrent && (
                 <img src={slide.image} className="image" alt="images" />
-                // <img src={slide.image} className="image" alt="images" />
               )}
             </div>
           );

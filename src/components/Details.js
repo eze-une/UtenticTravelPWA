@@ -15,7 +15,7 @@ const Details = ({
   const renderContent = () => {
     console.log(flipped);
     console.log('jhjh');
-    if (!flipped) {
+    if (flipped) {
       return (
         <>
           <div className="slider-content">

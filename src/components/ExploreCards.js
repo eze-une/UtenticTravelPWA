@@ -1,7 +1,6 @@
 import React from "react";
 import SingleCard from "../SingleCard";
 import { Grid } from "semantic-ui-react";
-// import './ExploreCards.css';
 
 function ExploreCards(props) {
   return (

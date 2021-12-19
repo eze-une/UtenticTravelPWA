@@ -28,7 +28,7 @@
   cursor: pointer;
   margin: 10rem 25px;
   background-color: transparent;
-  top: 50%;
+  /* top: 45%; */
   position: relative;
   border: solid 2px #c4c4c4;
 }
@@ -47,7 +47,7 @@
   vertical-align: middle;
   padding: 40px;
   width: 100%;
-  top: 35%;
+  top: 30%;
 }
 .title{
   text-align: center;
@@ -67,4 +67,12 @@
 }
 .right-pointer{
   margin-left: 20px;
+}
+@media screen and (max-width:800px) {
+  .info-container{
+    top: 20%;
+  }
+  .button{
+    width: 90%;
+  }
 }

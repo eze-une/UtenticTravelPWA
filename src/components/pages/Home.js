@@ -5,8 +5,6 @@ import Content from "../Content";
 import { SliderData } from "../SliderData";
 import { CardInfoData } from "../CardInfoData";
 import Details from "../Details";
-import travel01 from "../../photo_2021-10-21_12-12-05.jpg";
-// import travel02 from "../../Group 1112.png";
 import HomeSlider from "../HomeSlider";
 import Testimonials from "../Testimonials";
 import { DetailsInfo } from "../DetailsInfo";
@@ -29,9 +27,6 @@ function Home() {
           />
         );
       })}
-
-      <Content />
-
       <Testimonials />
     </>
   );

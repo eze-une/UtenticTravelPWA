@@ -1,9 +1,8 @@
 import React from "react";
 import { Carousel } from "@trendyol-js/react-carousel";
 import SingleCard from "../SingleCard";
-import { Icon } from "semantic-ui-react";
 import './Cards.css'
-function HomeSlider(props, show) {
+function HomeSlider(props) {
   const RightArrow = (
     <div>
       <i
@@ -28,7 +27,7 @@ function HomeSlider(props, show) {
           cursor: "pointer",
           display: "flex",
           padding: "20px",
-          margin: "50px",
+          margin: "0px",
           marginTop:"10px"
         }}
       >
@@ -48,6 +47,7 @@ function HomeSlider(props, show) {
                   src={item.src}
                   text={item.text}
                   label={item.label}
+                  price={item.price}
                 />
               </div>
             );

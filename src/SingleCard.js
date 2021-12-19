@@ -10,6 +10,7 @@ function SingleCard(props) {
 
         <div className="cards__item__info">
           <h5 className="cards__item__text">{props.text}</h5>
+          <p className="cards__item__price">{props.price} ETB</p>
         </div>
       </li>
     </div>
