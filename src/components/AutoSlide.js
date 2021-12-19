@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./AutoSlide.css";
-import { Button, Icon } from "semantic-ui-react";
 
 function AutoSlide(props) {
   const images = [
@@ -57,35 +56,8 @@ function AutoSlide(props) {
         <h3 className="description">
           Find the best travel packages in one place.{" "}
         </h3>
-        <div /*className="button"*/>
+        <div>
           <Link to="/Explore" className="explore-button">
-            {/* <Button
-              animated
-              style={{
-                backgroundColor: "transparent",
-                fontSize: "20px",
-                margin: "-6rem",
-                width: "100%",
-              }}
-            >
-              <Button.Content
-                style={{ color: "green", backgroundColor: "red" }}
-                visible
-              >
-                Explore Now
-              </Button.Content>
-              <Button.Content
-                hidden
-                style={{
-                  color: "#f1f9ff",
-                  backgroundColor: "red",
-                  marginLeft: "-2rem",
-                  marginTop: "-2rem",
-                }}
-              >
-                <Icon name="arrow right" />
-              </Button.Content>
-            </Button> */}
             <div className="ui animated button" style={{backgroundColor:'red',color:"white",borderRadius:'30px', marginTop:'10px'}}>
               <div class="visible content"  style={{height:"30px",marginTop:'1rem'}}>Explore Now</div>
               <div class="hidden content"  style={{height:"50px", marginTop:'-2rem'}}>
